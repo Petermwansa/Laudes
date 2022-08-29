@@ -56,9 +56,37 @@ html::-webkit-slider-thumb{
     background-color: var(--peru);
 }
 
-
 section {
     padding: 5rem 10%;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.heading span {
+    font-size: 2.5rem;
+    color: var(--peru);
+}
+
+.heading h3 {
+    font-size: 4.5rem;
+    color: var(--peru);
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    background: var(--peru);
+    color: var(--white);
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 1rem 3rem;
+}
+
+.btn:hover{
+    letter-spacing: .2rem;
 }
 
 .header {
@@ -68,10 +96,11 @@ section {
     align-items: center;
     justify-content: space-between;
     box-shadow: var(--box-shadow);
-    position: sticky;
+    position: relative;
     top: 0;
     left: 0;
     right: 0;
+    background: var(--white);
     z-index: 1000;
 }
 
@@ -99,6 +128,275 @@ section {
     color: var(--light-black);
     display: none;
 }
+
+@keyframes fadeIn {
+    0% {
+        transform: translateY(-1rem) scale(0);
+    }
+}
+
+.home {
+    padding: 0;
+    background: var(--black);
+}
+
+.home .slide {
+    min-height: 100vh;
+    background-size: cover !important;
+    background-position: center !important;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home .slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--dark-bg);
+}
+
+
+.home .slide .content {
+    text-align: center;
+    width: 70rem;
+    display: none;
+}
+
+.home .slide .content span {
+    font-size: 3rem;
+    display: block;
+    padding-bottom: .5rem;
+    color: var(--light-white);
+    text-align: center;
+    animation: fadeIn 0.4s cubic-bezier(0.54, 1.3, 0.63, 1.34) .7s backwards;
+}
+
+.home .slide .content h3 {
+    text-align: center;
+    font-size: 8vw;
+    text-transform: uppercase;    
+    color: var(--white);
+    padding: 2rem 0;
+    line-height: 1;
+    text-shadow: 0 .5rem 1rem rgba(0,0,0,0.7);
+    animation: fadeIn 0.4s cubic-bezier(0.54, 1.3, 0.63, 1.34) .7s backwards;
+}
+
+.home .slide .content .btn {
+    animation: fadeIn 0.4s cubic-bezier(0.54, 1.3, 0.63, 1.34) 1.0s backwards;
+}
+
+.home .swiper-slide-active .content {
+    display: inline-block;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    background: var(--white);
+    color: var(--black);
+
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background: var(--peru);
+    color: var(--white);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 2rem;
+}
+
+
+.about {
+    display: flex;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.about .image {
+    width: 100%;
+}
+
+.about-image {
+    width: 50%;
+}
+
+.about .image img {
+    text-align: center;
+    width: 150%;
+    border-radius: 50%;
+}
+
+.about .content {
+padding-left: 20%;
+}
+
+.about .content .title {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.about-food {
+    font-size: 2.5rem;
+    font-weight: 100;
+}
+.about .content p {
+    font-size: 2rem;
+}
+
+.icons-container {
+    text-align: center;
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: 4rem auto;
+}
+
+
+
+
+
+.food {
+    background: var(--light-bg);
+}
+
+.food .slide {
+    text-align: center;
+    padding: 3rem 2rem;
+    transform: scale(.5);
+    opacity: .5;
+    margin-bottom: 4rem;
+    cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--peru);
+}
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 0;
+}
+
+.food .swiper-slide-active {
+    transform: scale(1);
+    opacity: 1;
+    background: var(--white);
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+}
+
+.food .slide img {
+    height: 14rem;
+    margin-bottom: 1rem;
+}
+
+.food .slide h3 {
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    color:var(--black);
+}
+
+.food .slide .price {
+    font-size: 2.5rem;
+    color: var(--peru);
+}
+
+
+.food-preview-container {
+    background: var(--dark-bg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1100;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.food-preview-container .food-preview {
+    text-align: center;
+    background: var(--white);
+    padding: 3rem 2rem;
+    border-radius: .5rem;
+    display: none;
+    width: 43rem;
+}
+
+.food-preview-container .food-preview.active {
+    display: inline-block;
+}
+
+.food-preview-container .food-preview img {
+    height: 25rem;
+    margin-bottom: 1rem;
+}
+
+.food-preview-container .food-preview h3 {
+    padding: 1rem 0;
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.food-preview-container .food-preview .stars {
+    margin-top: .5rem;
+}
+
+.food-preview-container .food-preview .stars i {
+    font-size: 1.7rem;
+    color: var(--peru);
+}
+
+
+.food-preview-container .food-preview p {
+    font-size: 1.6rem;
+    color: var(--light-black);
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+.food-preview-container .food-preview .price {
+    font-size: 2.5rem;
+    color: var(--black);
+    margin-bottom: .5rem;
+}
+
+#close-preview {
+    position: absolute;
+    top: 1.5rem; 
+    right: 2.5rem;
+    font-size: 5.5rem;
+    cursor: pointer;
+    color: var(--white);
+}
+
+#close-preview:hover {
+    transform: rotate(90deg);
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -138,6 +436,10 @@ section {
     html {
         font-size: 55%;
     }
+
+    .home .slide .content h3 {
+        font-size: 15vw;
+    }
 }
 
 
@@ -168,6 +470,12 @@ section {
         display: block;
         margin: 2rem;
     }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        top: initial;
+        bottom: 1rem;
+    }
 }
 
 
@@ -175,5 +483,9 @@ section {
 
     html {
         font-size: 50%;
+    }
+
+    .home .slide .content h3 {
+        font-size: 6rem;
     }
 }

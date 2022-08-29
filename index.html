@@ -8,8 +8,10 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     
-    <link rel="stylesheet" href="styles.css">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="styles.css">
 
 
 </head>
@@ -41,48 +43,309 @@
 
 <section class="home" id="home">
 
-    <div class="home-slider">
-        <div class="w">
-            <div class="slide" style="background: url(images/hall1.jpg) no-repeat;">
+    <div class="swiper home-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide" style="background: url(images/hall1.jpg) no-repeat;">
                 <div class="content">
                     <span>Beautiful banquet hall</span>
+                    <h3>Awesome and cozy lighting</h3>
+                    <button href="#" class="btn">Get Started</button>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide" style="background: url(images/hall2.jpg) no-repeat;">
+                <div class="content">
+                    <span>Authentic Kitchen</span>
+                    <h3>Awesome and cozy lighting</h3>
+                    <button href="#" class="btn">Get Started</button>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide" style="background: url(images/hall3.jpg) no-repeat;">
+                <div class="content">
+                    <span>Awesome Services</span>
                     <h3>Awesome and cozy lighting</h3>
                     <a href="#" class="btn">Get Started</a>
                 </div>
             </div>
 
-            <div class="slide" style="background: url(images/hall1.jpg) no-repeat;">
-                <div class="content">
-                    <span>Authentic Kitchen</span>
-                    <h3>A variety of dishes to choose from</h3>
-                    <a href="#" class="btn">Get Started</a>
-                </div>
-            </div>
-
-            <div class="slide" style="background: url(images/hall1.jpg) no-repeat;">
-                <div class="content">
-                    <span>Awesome Services</span>
-                    <h3>Welcoming staff to make you have an awesomne banquet</h3>
-                    <a href="#" class="btn">Get Started</a>
-                </div>
-            </div>
-
-            <div class="slide" style="background: url(images/hall1.jpg) no-repeat;">
+            <div class="swiper-slide slide" style="background: url(images/hall4.jpg) no-repeat;">
                 <div class="content">
                     <span>Serene Environment</span>
-                    <h3>Located away from noise of the city</h3>
+                    <h3>Awesome and cozy lighting</h3>
                     <a href="#" class="btn">Get Started</a>
                 </div>
             </div>
         </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
     </div>
 
 
 </section>
 
 
-
 <!-- end of the home section  -->
+
+
+
+
+<!-- start of the about section  -->
+
+<section class="about" id="about">
+
+    <div class="image">
+        <img src="images/about.jpg" alt="dish">
+    </div>
+
+    <div class="content">
+        <div class="about-content">
+            <h3 class="title">Welcome to Laudes</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sem arcu, 
+                aliquet sed venenatis posuere, consectetur quis dolor. Etiam cursus sapien
+                 vel diam congue, id pulvinar neque mollis. Pellentesque quis metus diam.
+                Sed dolor elit, tempor ac tincidunt vitae, 
+                semper vitae orci. Pellentesque porttitor tortor non lorem ultrices,
+            </p>
+    
+            <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="icons-container">
+            <div class="icons">
+                <img src="images/quality.png" class="about-image" alt="">
+                <h3 class="about-food">Quality Food</h3>
+            </div>
+            
+            <div class="icons">
+                <img src="images/food.png" class="about-image" alt="">
+                <h3 class="about-food">Food & Drinks</h3>
+            </div>
+
+            <div class="icons">
+                <img src="images/chef.png" class="about-image" alt="">
+                <h3 class="about-food">Expert Chefs</h3>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- end of the about section  -->
+
+
+
+
+
+<!-- start of the food section  -->
+
+<section class="food" id="food">
+    <div class="heading">
+        <span>Popular dishes</span>
+        <h3>Our delicious food</h3>
+    </div>
+
+    <div class="swiper food-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide" data-name="dish1">
+                <img src="images/dish1.jpg" alt="">
+                <h3 class="price">600p</h3>
+            </div>
+
+            <div class="swiper-slide slide" data-name="dish2">
+                <img src="images/dish2.jpg" alt="">
+                <h3 class="price">600p</h3>
+            </div>
+
+            <div class="swiper-slide slide" data-name="dish3">
+                <img src="images/dish3.jpg" alt="">
+                <h3 class="price">600p</h3>
+            </div>
+
+            <div class="swiper-slide slide" data-name="dish4">
+                <img src="images/dish4.jpg" alt="">
+                <h3 class="price">600p</h3>
+            </div>
+
+            <div class="swiper-slide slide" data-name="dish5">
+                <img src="images/dish5.jpg" alt="">
+                <h3 class="price">600p</h3>
+            </div>
+
+            <div class="swiper-slide slide" data-name="dish6">
+                <img src="images/dish6.jpg" alt="">
+                <h3 class="price">600p</h3>
+            </div>
+
+            <div class="swiper-slide slide" data-name="dish7">
+                <img src="images/dish7.jpg" alt="">
+                <h3 class="price">600p</h3>
+            </div>
+
+            <div class="swiper-slide slide" data-name="dish8">
+                <img src="images/dish8.jpg" alt="">
+                <h3 class="price">600p</h3>
+            </div>
+
+            <div class="swiper-slide slide" data-name="dish9">
+                <img src="images/dish9.jpg" alt="">
+                <h3 class="price">600p</h3>
+            </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+    </div>
+</section>
+
+<!-- end of the food section  -->
+
+
+
+<!-- the food preview section starts  -->
+
+    <section class="food-preview-container">
+
+        <div id="close-preview" class="fas fa-times"></div>
+
+        <div class="food-preview" data-target="dish1">
+            <img src="images/dish1.jpg" alt="">
+            <h3>delicious food</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis</p>
+            <div class="price">600p</div>
+            <a href="#" class="btn">Buy now</a>
+        </div>
+
+        <div class="food-preview" data-target="dish2">
+            <img src="images/dish2.jpg" alt="">
+            <h3>delicious food</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis</p>
+            <div class="price">600p</div>
+            <a href="#" class="btn">Buy now</a>
+        </div>
+
+        <div class="food-preview" data-target="dish3">
+            <img src="images/dish3.jpg" alt="">
+            <h3>delicious food</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis</p>
+            <div class="price">600p</div>
+            <a href="#" class="btn">Buy now</a>
+        </div>
+
+        <div class="food-preview" data-target="dish4">
+            <img src="images/dish4.jpg" alt="">
+            <h3>delicious food</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis</p>
+            <div class="price">600p</div>
+            <a href="#" class="btn">Buy now</a>
+        </div>
+
+        <div class="food-preview" data-target="dish5">
+            <img src="images/dish5.jpg" alt="">
+            <h3>delicious food</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis</p>
+            <div class="price">600p</div>
+            <a href="#" class="btn">Buy now</a>
+        </div>
+        <div class="food-preview" data-target="dish6">
+            <img src="images/dish6.jpg" alt="">
+            <h3>delicious food</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis</p>
+            <div class="price">600p</div>
+            <a href="#" class="btn">Buy now</a>
+        </div>
+
+        <div class="food-preview" data-target="dish7">
+            <img src="images/dish7.jpg" alt="">
+            <h3>delicious food</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis</p>
+            <div class="price">600p</div>
+            <a href="#" class="btn">Buy now</a>
+        </div>
+
+        <div class="food-preview" data-target="dish8">
+            <img src="images/dish8.jpg" alt="">
+            <h3>delicious food</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis</p>
+            <div class="price">600p</div>
+            <a href="#" class="btn">Buy now</a>
+        </div>
+
+        <div class="food-preview" data-target="dish9">
+            <img src="images/dish9.jpg" alt="">
+            <h3>delicious food</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis</p>
+            <div class="price">600p</div>
+            <a href="#" class="btn">Buy now</a>
+        </div>
+    </section>
+
+<!-- the food preview section ends  -->
 
 
 
@@ -94,8 +357,9 @@
 
 
 <!-- we get the custom js file  -->
-
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="index.js"></script>
+
 
 </body>
 </html>
