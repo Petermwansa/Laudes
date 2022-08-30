@@ -55,4 +55,45 @@ document.querySelectorAll('.food .slide').forEach(food => {
       }
     })
   }
-})
+});
+
+
+
+previewContainer.querySelector('#close-preview').onclick = () => {
+  previewContainer.style.display = 'none';
+  previewBox.forEach(close => {
+    close.classList.remove('active');
+  });
+}
+
+
+// this code is for the light gallery funtionality 
+lightGallery(document.querySelector('.gallery .gallery-container'));
+
+
+
+var swiper = new Swiper(".menu-slider", {
+  grabCursor:true,
+  loop:true,
+  autoHeight: true,
+  centeredSlides:true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
