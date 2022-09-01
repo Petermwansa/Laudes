@@ -58,7 +58,6 @@ document.querySelectorAll('.food .slide').forEach(food => {
 });
 
 
-
 previewContainer.querySelector('#close-preview').onclick = () => {
   previewContainer.style.display = 'none';
   previewBox.forEach(close => {
@@ -72,6 +71,7 @@ lightGallery(document.querySelector('.gallery .gallery-container'));
 
 
 
+// this code is for the menu slider 
 var swiper = new Swiper(".menu-slider", {
   grabCursor:true,
   loop:true,
@@ -83,6 +83,29 @@ var swiper = new Swiper(".menu-slider", {
   },
 });
 
+
+// this code is for the slide for the blog posts 
+var swiper = new Swiper(".blogs-slider", {
+  grabCursor:true,
+  loop:true,
+  autoHeight: true,
+  centeredSlides:true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    700: {
+      slidesPerView: 2,
+    },
+    1000: {
+      slidesPerView: 3,
+    },
+  },
+});
 
 
 
