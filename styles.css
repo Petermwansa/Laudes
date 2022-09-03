@@ -772,6 +772,7 @@ padding-left: 20%;
         top: 99%;
         left: 0;
         right: 0;
+        background-color: var(--white);
         border-top: var(--border);
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
