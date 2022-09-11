@@ -114,6 +114,19 @@ var swiper = new Swiper(".blogs-slider", {
 
 
 
+//FOR PETER'S WEBSITE
+
+// <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+// <div class="elfsight-app-7866ebf4-00c2-4e84-8783-05e169e6c498"></div>
+
+
+
+
+
+
+
+
+
 
 
 
