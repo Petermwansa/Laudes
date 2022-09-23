@@ -2,7 +2,8 @@
 
 
 :root {
-    --peru: #cd9452;
+    --logo: #F2DA84;
+    --peru: #7A1618;
     --black: #222;
     --white: #ffff;
     --light-black: #666;
@@ -11,7 +12,7 @@
     --border: .1rem solid #aaa;
     --dark-bg: rgba(0,0,0,.3);
     --box-shadow: 0 .5rem 1rem rgba(0,0,0,0.1);
-    --basic-color: #F2DA84;
+    --basic-color: #7A1618;
     --color-bg: #c4c4c4;
 }
 
@@ -55,6 +56,61 @@ html::-webkit-scrollbar-track {
 html::-webkit-slider-thumb{
     background-color: var(--peru);
 }
+
+
+
+/* for the scroller  */
+.scrollTop {
+    position: fixed;
+    bottom: 800px;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+    background: var(--peru) url(images/up.png);
+    border-radius: 50%;
+    background-size: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.7s;
+  }
+  
+  .scrollTop.active {
+    bottom: 40px;
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  
+  @media (max-width: 780px) {
+    .scrollTop {
+      position: fixed;
+      bottom: 500px;
+      right: 30px;
+      width: 30px;
+      height: 30px;
+      background: var(--peru) url(images/up.png);
+      border-radius: 50%;
+      background-size: 20px;
+      background-position: center;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      z-index: 1000;
+      visibility: hidden;
+      opacity: 0;
+      transition: 0.7s;
+    }
+    
+    .scrollTop.active {
+      bottom: 20px;
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+  
 
 section {
     padding: 5rem 10%;
@@ -106,6 +162,7 @@ section {
 
 
 .header .logo {
+    color: var(--logo);
     font-size: 3.5rem;
     font-weight: bolder;
 }
@@ -267,6 +324,30 @@ padding-left: 20%;
     margin: 4rem auto;
 }
 
+
+/* the cards section  */
+
+.grid {
+    display: grid;
+    width: 114em;
+    grid-gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    align-items: flex-start;
+}
+
+.grid-item {
+    background-color: var(--white);
+    border-radius: 0.4rem;
+    overflow: hidden;
+    box-shadow: 0 3rem 6rem rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.grid-item:hover {
+    transform: translateY(-0.5%);
+    box-shadow: 0 4rem 8rem rgba(0,0,0,0.5);
+}
 
 
 
@@ -654,6 +735,33 @@ padding-left: 20%;
     font-size: 1.6rem;
     color: var(--light-black);
 }
+
+
+
+/* for the reviews section  */
+
+.reviews {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    justify-self: center;
+    align-items: center;
+}
+
+.slider {
+    width: 800px;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slide {
+    width: 500%;
+    height: 100%;
+    display: inline;
+}
+
+
 
 
 .footer {

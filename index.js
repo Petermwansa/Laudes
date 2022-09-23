@@ -1,3 +1,21 @@
+
+//SCROLLER SECTION
+
+upwards = () => {
+  window.addEventListener('scroll', function(){
+      var scroll = document.querySelector('.scrollTop');
+      scroll.classList.toggle("active", window.scrollY > 500 )
+  })
+
+  scrollToTop = () => {
+      window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+      })
+  }
+}
+
+
 let navbar = document.querySelector('.header .navbar');
 let menuBtn = document.querySelector('#menu-btn');
 
@@ -109,7 +127,7 @@ var swiper = new Swiper(".blogs-slider", {
 
 
 
-
+upwards();
 
 
 
