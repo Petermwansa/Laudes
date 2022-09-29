@@ -740,27 +740,79 @@ padding-left: 20%;
 
 /* for the reviews section  */
 
-.reviews {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    justify-self: center;
-    align-items: center;
+.carousel-wrapper {
+    height: 600px;
+    position: relative;
+    width: 400px;
+    display: block;
+    margin: 50px auto;
+    border: 2px solid var(--peru);
 }
 
-.slider {
-    width: 800px;
-    height: 100%;
-    border-radius: 10px;
-    overflow: hidden;
+.carousel-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 50px;
+    opacity: 1;
+    transition: all .5s ease-in-out;
 }
 
-.slide {
-    width: 500%;
-    height: 100%;
-    display: inline;
+.arrow {
+    border: solid var(--peru);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 12px;
 }
 
+.arrow-prev {
+    left: -100px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(135deg);
+}
+
+.arrow-next {
+    right: -100px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+[id^= "item"] {
+    display: none;
+}
+
+.item-1 {
+    z-index: 2;
+    opacity: 1;
+    background: url(images/review.png);
+    background-size: contain;
+}
+
+.item-2 {
+    background: url(images/review1.png);
+    background-size: contain;
+}
+
+.item-3 {
+    background: url(images/review2.png);
+    background-size: contain;
+}
+
+*:target ~ .item-1 {
+    opacity: 0;
+}
+
+#item-1:target ~ .item-1 {
+    opacity: 1;
+}
+
+#item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+    z-index: 3;
+}
 
 
 
