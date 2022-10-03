@@ -37,6 +37,39 @@ var swiper = new Swiper(".home-slider", {
 });
 
 
+
+
+
+// this is the code for the slider that displays the different packages 
+
+var swiper = new Swiper(".packages-slider", {
+  grabCursor:true,
+  loop:true,
+  centeredSlides:true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    700: {
+      slidesPerView: 2,
+    },
+    1000: {
+      slidesPerView: 3,
+    },
+  },
+})
+
+
+
+
+
+
+// this is the slider for the different food offered by the restaurant 
+
 var swiper = new Swiper(".food-slider", {
   grabCursor:true,
   loop:true,
