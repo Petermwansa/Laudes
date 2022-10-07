@@ -742,8 +742,8 @@ padding-left: 20%;
 
 .carousel-wrapper {
     height: 600px;
-    position: relative;
     width: 400px;
+    position: relative;
     display: block;
     margin: 50px auto;
     border: 2px solid var(--peru);
@@ -788,18 +788,62 @@ padding-left: 20%;
 .item-1 {
     z-index: 2;
     opacity: 1;
-    background: url(images/review.png);
-    background-size: contain;
+    background-image: url(images/review.png);
+    background-repeat: no-repeat;
 }
 
 .item-2 {
     background: url(images/review1.png);
-    background-size: contain;
+    object-fit: contain;
+    background-repeat: no-repeat;
 }
 
 .item-3 {
     background: url(images/review2.png);
-    background-size: contain;
+    object-fit: contain;
+    background-repeat: no-repeat;
+}
+
+.item-4 {
+    background: url(images/review3.png);
+    object-fit: contain;
+    background-repeat: no-repeat;
+
+}
+
+.item-5 {
+    background: url(images/review4.png);
+    object-fit: contain;
+    background-repeat: no-repeat;
+
+}
+
+.item-6 {
+    background: url(images/review5.png);
+    object-fit: contain;
+    background-repeat: no-repeat;
+
+}
+
+.item-7 {
+    background: url(images/review6.png);
+    object-fit: contain;
+    background-repeat: no-repeat;
+
+}
+
+.item-8 {
+    background: url(images/review7.png);
+    object-fit: contain;
+    background-repeat: no-repeat;
+
+}
+
+.item-9 {
+    background: url(images/review8.png);
+    object-fit: contain;
+    background-repeat: no-repeat;
+
 }
 
 *:target ~ .item-1 {
@@ -814,6 +858,33 @@ padding-left: 20%;
     z-index: 3;
 }
 
+#item3:target ~ .item-3, #item-4:target ~ .item-4 {
+    z-index: 3;
+}
+
+#item4:target ~ .item-4, #item-5:target ~ .item-5 {
+    z-index: 3;
+}
+
+#item5:target ~ .item-5, #item-6:target ~ .item-6 {
+    z-index: 3;
+}
+
+#item-6:target ~ .item-6, #item-7:target ~ .item-7 {
+    z-index: 3;
+}
+
+#item7:target ~ .item-7, #item-8:target ~ .item-8 {
+    z-index: 3;
+}
+
+#item8:target ~ .item-8, #item-9:target ~ .item-9 {
+    z-index: 3;
+}
+
+#item9:target ~ .item-9, #item-1:target ~ .item-1 {
+    z-index: 3;
+}
 
 
 .footer {
