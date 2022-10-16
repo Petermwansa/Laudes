@@ -132,17 +132,18 @@ section {
 }
 
 .btn {
-    margin-top: 1rem;
+    margin-top: 8rem;
     display: inline-block;
     background: var(--peru);
     color: var(--white);
-    font-size: 2rem;
+    font-size: 4rem;
     cursor: pointer;
     padding: 1rem 3rem;
+    border-radius: 50%;
 }
 
 .btn:hover{
-    letter-spacing: .2rem;
+    letter-spacing: .5rem;
 }
 
 .header {
@@ -278,14 +279,15 @@ section {
 .about {
     display: flex;
     align-items: center;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     display: flex;
-    justify-content: center;
+    justify-content:center;
     gap: 2rem;
+    padding-left: 0;
 }
 
 .about .image {
-    width: 100%;
+    width: 25%;
 }
 
 .about-image {
@@ -741,8 +743,8 @@ padding-left: 20%;
 /* for the reviews section  */
 
 .carousel-wrapper {
-    height: 600px;
-    width: 400px;
+    height: 800px;
+    width: 600px;
     position: relative;
     display: block;
     margin: 50px auto;
@@ -990,6 +992,11 @@ padding-left: 20%;
 
 @media (max-width:768px) {
 
+    .about .image {
+        width: 50%;
+    }
+
+
     #menu-btn {
         display: inline-block;
     }
@@ -1001,11 +1008,13 @@ padding-left: 20%;
     .header .navbar {
         position: absolute;
         top: 99%;
-        left: 0;
-        right: 0;
+        left: 0%;
+        right: 0%;
         background-color: var(--white);
         border-top: var(--border);
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        align-items: center;
+
     }
 
     .header .navbar.active {
@@ -1041,3 +1050,8 @@ padding-left: 20%;
         font-size: 6rem;
     }
 }
+
+
+
+
+
