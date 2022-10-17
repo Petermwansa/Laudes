@@ -744,11 +744,18 @@ padding-left: 20%;
 
 .centered img {
     align-items: center;
-    margin-top: 5%;
-    margin-left: 20%;
+    margin-left: 15%;
+    /* padding: 5%; */
+    margin-bottom: 5%;
 }
 
+.arrow-review-left {
+    margin-left: 1%;
+}
 
+.arrow-review-right {
+    margin-right: 1%;
+}
 
 
 .footer {
@@ -830,11 +837,20 @@ padding-left: 20%;
 
 
 /* here is the part for the media queries  */
+@media(max-width:1400px) {
+    
+    #reviews {
+        display: none;
+    }
+}
+
 @media(max-width:1200px) {
     section {
         padding: 3rem 5%;
     }
+
 }
+
 
 
 @media(max-width:991px) {
@@ -849,6 +865,7 @@ padding-left: 20%;
     .home .slide .content h3 {
         font-size: 15vw;
     }
+
 }
 
 
