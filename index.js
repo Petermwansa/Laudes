@@ -160,7 +160,18 @@ var swiper = new Swiper(".blogs-slider", {
 
 
 
+
+// this code is for the reviews swipper 
+
+var swiper = new Swiper(".reviews-slider", {
+  effect: "cards",
+  grabCursor: true,
+});
+
+
+
 upwards();
+swiper();
 
 
 
