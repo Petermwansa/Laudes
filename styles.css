@@ -64,7 +64,7 @@ html::-webkit-slider-thumb{
     background: #ffff url(images/loader.gif) no-repeat center;
     height: 100%;
     width: 100%;
-    background-size: 5%;
+    background-size: 15%;
     position: absolute;
     z-index: 2000;
     justify-content: center;
