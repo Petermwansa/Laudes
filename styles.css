@@ -64,7 +64,7 @@ html::-webkit-slider-thumb{
     background: #ffff url(images/loader.gif) no-repeat center;
     height: 100%;
     width: 100%;
-    background-size: 15%;
+    background-size: 6%;
     position: absolute;
     z-index: 2000;
     justify-content: center;
@@ -899,10 +899,43 @@ padding-left: 20%;
         font-size: 15vw;
     }
 
+    #preloader {
+        background: #ffff url(images/loader.gif) no-repeat center;
+        height: 100%;
+        width: 100%;
+        background-size: 13%;
+        position: absolute;
+        z-index: 2000;
+        justify-content: center;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        pointer-events: none;
+    
+    }
+
 }
 
 
 @media (max-width:768px) {
+
+
+    #preloader {
+        background: #ffff url(images/loader.gif) no-repeat center;
+        height: 100%;
+        width: 100%;
+        background-size: 15%;
+        position: absolute;
+        z-index: 2000;
+        justify-content: center;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        pointer-events: none;
+    
+    }
 
     .about .image {
         width: 50%;
