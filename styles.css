@@ -48,7 +48,7 @@ html {
 html::-webkit-scrollbar{
     width: 1rem;
 }
-
+ 
 html::-webkit-scrollbar-track {
     background-color: var(--white);
 }
@@ -56,6 +56,38 @@ html::-webkit-scrollbar-track {
 html::-webkit-slider-thumb{
     background-color: var(--peru);
 }
+
+
+/* for the loader  */
+
+#preloader {
+    background: #ffff url(images/loader.gif) no-repeat center;
+    height: 100%;
+    width: 100%;
+    background-size: 5%;
+    position: absolute;
+    z-index: 2000;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+
+}
+
+.disappear {
+    animation: vanish 8s forwards;
+}
+
+@keyframes vanish {
+    100% {
+        display: none;
+        opacity: 0;
+    }
+}
+
+
 
 
 
@@ -90,8 +122,8 @@ html::-webkit-slider-thumb{
       position: fixed;
       bottom: 500px;
       right: 30px;
-      width: 30px;
-      height: 30px;
+      width: 48px;
+      height: 48px;
       background: var(--peru) url(images/up.png);
       border-radius: 50%;
       background-size: 20px;
@@ -196,6 +228,7 @@ section {
 .home {
     padding: 0;
     background: var(--black);
+    z-index: 2000;
 }
 
 .home .slide {
@@ -237,17 +270,17 @@ section {
 
 .home .slide .content h3 {
     text-align: center;
-    font-size: 8vw;
+    font-size: 6vw;
     text-transform: uppercase;    
     color: var(--white);
     padding: 2rem 0;
     line-height: 1;
     text-shadow: 0 .5rem 1rem rgba(0,0,0,0.7);
-    animation: fadeIn 0.4s cubic-bezier(0.54, 1.3, 0.63, 1.34) .7s backwards;
+    animation: fadeIn 2.4s cubic-bezier(0.54, 1.3, 0.63, 1.34) 2.7s backwards;
 }
 
 .home .slide .content .btn {
-    animation: fadeIn 0.4s cubic-bezier(0.54, 1.3, 0.63, 1.34) 1.0s backwards;
+    animation: fadeIn 3.4s cubic-bezier(0.54, 1.3, 0.63, 1.34) 3.0s backwards;
 }
 
 .home .swiper-slide-active .content {

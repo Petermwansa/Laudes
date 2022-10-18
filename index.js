@@ -1,4 +1,20 @@
 
+
+//THE PRELOADER SECTION
+
+load = () => {
+  var loader = document.getElementById("preloader");
+
+  window.addEventListener("load", vanish);
+
+  function vanish () {
+    loader.classList.add("disappear");
+    loader.classList.add("arrow-land");
+  }
+};
+
+
+
 //SCROLLER SECTION
 
 upwards = () => {
@@ -178,6 +194,7 @@ var swiper = new Swiper(".reviews-slider", {
 });
 
 
+load();
 upwards();
 swiper();
 
