@@ -170,6 +170,7 @@ section {
 .heading h3 {
     font-size: 4.5rem;
     color: var(--peru);
+    font-weight: 100;
 }
 
 .btn {
@@ -368,7 +369,7 @@ section {
 
 .about .content .title {
     font-size: 5rem;
-    font-weight: bold;
+    font-weight: 100;
 }
 
 .about-food {
@@ -423,6 +424,10 @@ section {
 
 .food {
     background: var(--light-bg);
+}
+
+.food h3 {
+    font-weight: 100;
 }
 
 .food .slide {
@@ -592,6 +597,11 @@ section {
 .menu {
     background: var(--light-bg);   
     padding-bottom: 4rem;
+}
+
+.menu .title,
+.menu h3 {
+    font-weight: 100;
 }
 
 
@@ -830,6 +840,16 @@ section {
     text-align: center;
 }
 
+.footer .icons-container h3 {
+    font-weight: 100;
+}
+
+.footer .powered a {
+    font-weight: 100;
+    font-size: 2rem;
+}
+
+
 .footer .icons-container {
     display: grid;
     justify-content: center;
@@ -872,12 +892,13 @@ section {
 }
 
 .footer .share a {
-    height: 7rem;
-    width: 7rem;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
     line-height: 6rem;
     color: var(--white);
     background: var(--black);
-    margin: .3rem;
+    margin: 2.3rem;
     font-size: 3rem;
 }
 
