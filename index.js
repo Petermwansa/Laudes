@@ -194,9 +194,59 @@ var swiper = new Swiper(".reviews-slider", {
 });
 
 
+
+
+
+
+//THE CARDS SECTION
+
+const cards = document.querySelectorAll('.card');
+
+//Cards callback function
+const cardObserverCallback = (cardsToWatch, cardObserver) => {
+    cardsToWatch.forEach(cardToWatch => {
+        if(cardToWatch.isIntersecting) {
+            cardToWatch.target.classList.remove('card');
+            cardObserver.unobserve(cardToWatch.target);
+        }
+    });
+}
+
+//card option
+const cardObserverOptions = {
+    threshod: .1
+}
+
+//card oberver
+const cardObserver = new IntersectionObserver(cardObserverCallback, cardObserverOptions);
+
+//card observer on card
+cards.forEach(card => {
+    cardObserver.observe(card)
+})
+
+
+
+
+
 load();
 upwards();
 swiper();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
