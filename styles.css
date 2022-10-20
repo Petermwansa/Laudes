@@ -215,7 +215,7 @@ section {
 .header .navbar a {
     font-size: 2rem;
     margin-left: 2rem;
-    color: var(--light-black);
+    color: var(--black);
 }
 
 .header .navbar a:hover {
@@ -226,7 +226,7 @@ section {
 #menu-btn {
     font-size: 2.5rem;
     cursor: pointer;
-    color: var(--light-black);
+    color: var(--black);
     display: none;
 }
 
@@ -667,7 +667,7 @@ section {
 
 .menu .slide .box-container .box p{
     font-size: 1.6rem;
-    color: var(--light-black);
+    color: var(--black);
     line-height: 2;
 }
 
@@ -719,7 +719,7 @@ section {
     margin: 1rem 0;
     padding: 1.2rem 1.4rem;
     font-size: 1.7rem;
-    color: var(--light-black);
+    color: var(--black);
     border: var(--border);
     text-transform: none;
 }
@@ -753,7 +753,7 @@ section {
 }
 
 .order form .box-container .box .inputBox .map span {
-    color: var(--light-black);
+    color: var(--black);
     font-size: 2rem;
 }
 
@@ -810,7 +810,7 @@ section {
 
 .blogs .slide  .content .icon a {
     font-size: 1.5rem;
-    color: var(--light-black);
+    color: var(--black);
 }
 
 .blogs .slide .content .icon a i {
@@ -835,7 +835,7 @@ section {
     padding: 1rem 0;
     line-height: 2;
     font-size: 1.6rem;
-    color: var(--light-black);
+    color: var(--black);
 }
 
 
