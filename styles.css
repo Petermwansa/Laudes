@@ -59,7 +59,6 @@ html::-webkit-slider-thumb{
 
 
 /* for the loader  */
-
 #preloader {
     background: #ffff url(images/loader.gif) no-repeat center;
     height: 100%;
@@ -115,6 +114,29 @@ html::-webkit-slider-thumb{
     visibility: visible;
     opacity: 1;
 }
+
+
+
+/* for the cta button  */
+.cta {
+    position: fixed;
+    right: 20px;
+    width: 68px;
+    height: 68px;
+    background: var(--peru) url(images/call.png);
+    border-radius: 50%;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1000;
+    background-image: 50%;
+}
+.cta:hover {
+    width: 78px;
+    height: 78px;
+}
+  
+
   
   
 @media (max-width: 780px) {
