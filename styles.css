@@ -130,7 +130,7 @@ html::-webkit-slider-thumb{
     background-position: center;
     z-index: 1000;
     background-image: 50%;
-    visibility: hidden;
+    visibility: visible;
 }
 .cta:hover {
     width: 78px;
