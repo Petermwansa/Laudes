@@ -94,7 +94,7 @@ html::-webkit-slider-thumb{
 .scrollTop {
     position: fixed;
     bottom: 800px;
-    right: 40px;
+    right: 20px;
     width: 60px;
     height: 60px;
     background: var(--peru) url(images/up.png);
@@ -110,9 +110,14 @@ html::-webkit-slider-thumb{
 }
   
 .scrollTop.active {
-    bottom: 40px;
+    bottom: 20px;
     visibility: visible;
     opacity: 1;
+}
+
+.scrollTop:hover {
+    width: 68px;
+    height: 68px;
 }
 
 
@@ -121,8 +126,9 @@ html::-webkit-slider-thumb{
 .cta {
     position: fixed;
     right: 20px;
-    width: 68px;
-    height: 68px;
+    bottom: 100px;
+    width: 60px;
+    height: 60px;
     background: var(--peru) url(images/call.png);
     border-radius: 50%;
     cursor: pointer;
@@ -131,10 +137,11 @@ html::-webkit-slider-thumb{
     z-index: 1000;
     background-image: 50%;
     visibility: visible;
+    transition: .7s;
 }
 .cta:hover {
-    width: 78px;
-    height: 78px;
+    width: 68px;
+    height: 68px;
 }
   
 
@@ -1031,6 +1038,9 @@ section {
 /* here is the part for the media queries  */
 @media(max-width:1500px) {
     
+
+
+
     #reviews{
         display: none;
     }
@@ -1058,6 +1068,7 @@ section {
     .header > .nabar > .reviews-small {
         display: none;
     }
+
 
 
     .food .slide img {
@@ -1157,7 +1168,13 @@ section {
 }
 
 
+
+
+
 @media (max-width:768px) {
+
+
+
 
 
     #preloader {
