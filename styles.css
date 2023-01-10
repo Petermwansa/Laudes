@@ -21,8 +21,7 @@
 * {
     font-family: 'Italianno', cursive;
     color: var(--basic-color);
-    background-color: transparent;
-    background: transparent;
+    /* background-color: var(--color-bg); */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -31,7 +30,6 @@
     text-decoration: none;
     transition: all 0.4s cubic-bezier(.43, 1.1, .62, 1.08);
     text-transform: capitalize;
-    background: var(--light-bg);
 }
 
 
