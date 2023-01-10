@@ -30,6 +30,7 @@
     text-decoration: none;
     transition: all 0.4s cubic-bezier(.43, 1.1, .62, 1.08);
     text-transform: capitalize;
+    background: var(--light-bg);
 }
 
 
@@ -243,7 +244,7 @@ section {
 
 
 .header .navbar a {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-left: 2rem;
     color: var(--black);
 }
